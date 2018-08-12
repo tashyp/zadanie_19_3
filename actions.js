@@ -34,7 +34,7 @@ function removeComment(id) {
 function thumbUpComment(id) {
     return {
         type: THUMB_UP_COMMENT,
-        value: +1,
+        votes: +1,
         id: id
     }
 }
@@ -42,7 +42,7 @@ function thumbUpComment(id) {
 function thumbDownComment(id) {
     return {
         type: THUMB_DOWN_COMMENT,
-        value: -1,
+        votes: -1,
         id: id
     }
 }
